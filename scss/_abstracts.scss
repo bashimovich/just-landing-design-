@@ -1,0 +1,46 @@
+//variables 
+$primary-font:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$primary-color:#E51515;
+$info-panel-color:#F0F8FF;
+$font-color: #262626;
+
+$secondary-color:#f3f3f3;
+$date-color:#FFB320;
+$comment-color:#08ABBD;
+$gray-color:#9F9F9F;
+$light-color:#FEFEFE;
+$semi-color:#40A9FF;
+
+// utilities
+.bg-dark{
+    background-color: $secondary-color;
+}
+.bg-light{
+    background-color: $light-color;
+}
+
+.bg{
+    &*dark{
+        background-color: $secondary-color;
+    }
+
+    &*light{
+        background-color: $light-color;
+    }
+}
+
+.ml{
+    &-2{//ml-2
+        margin-left: 2rem;
+    }
+}
+
+
+// MIXINS
+
+@mixin flex-display($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content; 
+}
